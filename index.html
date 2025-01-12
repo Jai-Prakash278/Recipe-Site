@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Recipe Website</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <section class="navbar" id="pop-up">
+            <nav class="nav">
+                <div class="top-nav">
+                    <h1 class="site-name">Garam Masala</h1>
+                    <p class="middleyou">For You</p>
+                    <div class="search" id="apear">
+                        <p>Search your Recipe</p>
+                        <input type="text" class="search-box">
+                        <button class="search-btn">Search</button>
+                    </div>
+                    <div class="hamburger">
+                        <i class="ri-menu-4-line" onclick="showSidebar()"></i>
+                        <!-- <i class="ri-close-line" onclick="hideSidebar()"></i> -->
+                    </div>
+                </div>
+                <div class="nav-items" id="menulist">
+                    <a href="#" class="nav-item">
+                        <i class="ri-close-line" onclick="hideSidebar()"></i>
+                    </a>
+                    <a href="index.html" class="nav-item">Home</a>
+                    <a href="about.html" class="nav-item">About</a>
+                    <!-- <a href="#" class="nav-item"> -->
+                        <select name="choice" id="choice" class="choice nav-item">
+                            <option value="choose">Pasand</option>
+                            <option value="Bihari"><a href="#bihari" class="Bihar">Bihari Food</a></option>
+                            <option value="south"><a href="#south" class="south">SouthIndian Food</a></option>
+                            <option value="bengali"><a href="#bengali" class="bengal">Bengali Food</a></option>
+                            <option value="odisa"><a href="#odia" class="odia">Odia Food</a></option>
+                        </select>
+                    <!-- </a> -->
+                    <!-- <a href="#" class="nav-item">
+                        <select name="time" id="time" class="choice">
+                                <option value="Break"><a href="#bf" class="bf">Break Fast</a></option>                            
+                                <option value="lunch"><a href="#lunch" class="lunch">Lunch</a></option>
+                                <option value="dinner"><a href="#dinner" class="dinner">Dinner</a></option>
+                        </select>
+                    </a> -->
+                    <a href="#contact" class="nav-item">Contact Us</a>
+                </div>
+            </nav>
+        </section>
+        <div class="nav-content">
+            <h1 class="nav-heading">
+                Best <span>Quality</span> Ingredients
+            </h1>
+            <p class="nav-para">
+                Fast and yummy, Good for your tummy,<br />
+                Taste that makes you go yummmmm. <br /> Healthy and modern.
+            </p>
+            <div class="nav-btns">
+                <a href="#newrec" class="new-btn nw">New</a>
+                <a href="#" class="special-btn nw">Special</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="redvelvet">
+        <a href="#pop-up" class="top-arrow">
+            <!-- <i class="ri-arrow-up-circle-fill"></i> -->
+            <i class="ri-arrow-up-circle-line"></i>
+        </a>
+        <div class="redvelvet-container">
+            <div class="redvelvet-left">
+                <div class="redvelvet-img1">
+                    <img src="./img/redvelvet3.jpg" alt="">
+                </div>
+                <div class="redvelvet-img2">
+                    <img src="./img/redvelvet1.webp" alt="">
+                </div>
+            </div>
+            <div class="redvelvet-right">
+                <div class="redright-top">
+                    <h2 class="redvelvet-heading">Red Velvet Cake</h2>
+                    <p class="enjoypara">We provide best recipe to enjoy your time</p>
+                    <p class="cooking redvelvet-para">
+                        कुकिंग निर्देश
+                    </p>
+                    <p class="redvelvet-para">1. - सारी सामग्री को एकत्रित करें। केक टिन को ग्रीस करके आटे से डस्ट करें
+                        या बटर पेपर लगाएं। कढ़ाही
+                        में नमक डालकर एक स्टैंड रखें और मीडियम फ्लेम पर प्री हीट होने रखें। अगर केक ओवन में बनाना है तो
+                        180* पर 10 मिनिट के लिए प्री हीट होने रखें।</p>
+                </div>
+                <div class="redright-bottom">
+                    <div class="redright-first redingredient">
+                        <img src="./img/cocoa powder.jpeg" alt="">
+                        <p>Mild cocoa flavor</p>
+                    </div>
+                    <div class="redright-second redingredient">
+                        <img src="./img/tangy milk.webp" alt="">
+                        <p>Tangy buttermilk</p>
+                    </div>
+                    <div class="redright-third redingredient">
+                        <img src="./img/vanila.jpg" alt="">
+                        <p>Sweet vanilla</p>
+                    </div>
+                </div>
+
+                <div class="redright-btn">
+                    <a href="#">Read More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="number">
+        <div class="number-container">
+            <a href="#">
+                <div class="number-items drinks">
+                    <img src="./img/drinkspng.jpg" alt="">
+                    <p class="numbers">40+</p>
+                    <p class="number-text">Beverage</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="number-items cake">
+                    <img src="./img/cakepng.webp" alt="">
+                    <p class="numbers">20+</p>
+                    <p class="number-text">Cake</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="number-items">
+                    <img src="./img/ffpng.avif" alt="">
+                    <p class="numbers">30+</p>
+                    <p class="number-text">Fast Food</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="number-items">
+                    <img src="./img/pizzapng.jpg" alt="">
+                    <p class="numbers">10+</p>
+                    <p class="number-text">Pizza</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="healthy">
+        <div class="healthy-container">
+            <div class="healthy-upper">
+                <h1 class="healthy-heading">
+                    "Elevating street food to new heights"
+                </h1>
+                <p class="healthy-para">
+                    Indian Street Foods You Have to Experience!
+                </p>
+                <a href="#">More Recipes</a>
+            </div>
+            <div class="healthy-items">
+                <div class="healthy-item">
+                    <div class="healthy-item-content">
+                        <h2 class="treet-name">Litti Chokha - Bihari Special!</h2>
+                        <div class="street-quantity">
+                            <div class="healthy-timer healthy-common">
+                                <i class="ri-timer-flash-line"></i>
+                                <p class="healthy-time">50 minutes</p>
+                            </div>
+                            <div class="healthy-serving healthy-common">
+                                <i class="ri-bowl-line"></i>
+                                <p class="healthy-serve">4 Servings</p>
+                            </div>
+                        </div>
+                        <p class="calories">144 Calories/Piece</p>
+                    </div>
+                    <a href="#" class="healthy-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                    <div class="healthy-img">
+                        <img src="./img/litti.jpg" alt="">
+                    </div>
+                </div>
+                <div class="healthy-item">
+                    <div class="healthy-item-content">
+                        <h2 class="treet-name">Momos - Delhi's Darling Dumplings!</h2>
+                        <div class="street-quantity">
+                            <div class="healthy-timer healthy-common">
+                                <i class="ri-timer-flash-line"></i>
+                                <p class="healthy-time">30 minutes</p>
+                            </div>
+                            <div class="healthy-serving healthy-common">
+                                <i class="ri-bowl-line"></i>
+                                <p class="healthy-serve">6 Servings</p>
+                            </div>
+                        </div>
+                        <p class="calories">35 Calories/Piece</p>
+                    </div>
+                    <a href="#" class="healthy-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                    <div class="healthy-img">
+                        <img src="./img/momos.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="healthy-item">
+                    <div class="healthy-item-content">
+                        <h2 class="treet-name"> Mumbai Pav Bhaji - Comfort in a Bun!</h2>
+                        <div class="street-quantity">
+                            <div class="healthy-timer healthy-common">
+                                <i class="ri-timer-flash-line"></i>
+                                <p class="healthy-time">30 minutes</p>
+                            </div>
+                            <div class="healthy-serving healthy-common">
+                                <i class="ri-bowl-line"></i>
+                                <p class="healthy-serve">2 Servings</p>
+                            </div>
+                        </div>
+                        <p class="calories">406 Calories/Plate</p>
+                    </div>
+                    <a href="#" class="healthy-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                    <div class="healthy-img">
+                        <img src="./img/pav.webp" alt="">
+                    </div>
+                </div>
+                <div class="healthy-item">
+                    <div class="healthy-item-content">
+                        <h2 class="treet-name">Pani Puri - A Blast of Flavors!</h2>
+                        <div class="street-quantity">
+                            <div class="healthy-timer healthy-common">
+                                <i class="ri-timer-flash-line"></i>
+                                <p class="healthy-time">30 minutes</p>
+                            </div>
+                            <div class="healthy-serving healthy-common">
+                                <i class="ri-bowl-line"></i>
+                                <p class="healthy-serve">8 Servings</p>
+                            </div>
+                        </div>
+                        <p class="calories">51 Calories/Piece</p>
+                    </div>
+                    <a href="#" class="healthy-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                    <div class="healthy-img">
+                        <img src="./img/golgappa.jpg" alt="">
+                    </div>
+                </div>
+                <div class="healthy-item">
+                    <div class="healthy-item-content">
+                        <h2 class="treet-name">Mumbai's Vada Pav - Potato Heaven!</h2>
+                        <div class="street-quantity">
+                            <div class="healthy-timer healthy-common">
+                                <i class="ri-timer-flash-line"></i>
+                                <p class="healthy-time">30 minutes</p>
+                            </div>
+                            <div class="healthy-serving healthy-common">
+                                <i class="ri-bowl-line"></i>
+                                <p class="healthy-serve">2 Servings</p>
+                            </div>
+                        </div>
+                        <p class="calories">191 Calories/Pav</p>
+                    </div>
+                    <a href="#" class="healthy-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                    <div class="healthy-img">
+                        <img src="./img/vadapav.webp" alt="">
+                    </div>
+                </div>
+                <div class="healthy-item">
+                    <div class="healthy-item-content">
+                        <h2 class="treet-name">Punjab's Chole Bhature - Spicy and Crispy!</h2>
+                        <div class="street-quantity">
+                            <div class="healthy-timer healthy-common">
+                                <i class="ri-timer-flash-line"></i>
+                                <p class="healthy-time">30 minutes</p>
+                            </div>
+                            <div class="healthy-serving healthy-common">
+                                <i class="ri-bowl-line"></i>
+                                <p class="healthy-serve">2 Servings</p>
+                            </div>
+                        </div>
+                        <p class="calories">427 Calories/Plate</p>
+                    </div>
+                    <a href="#" class="healthy-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                    <div class="healthy-img">
+                        <img src="./img/bhatura.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="volcano">
+        <div class="volcano-container">
+            <div class="volcano-upper">
+                <h2 class="volcano-name">
+                    Volcano <span>Cheese</span> Pizza
+                </h2>
+            </div>
+            <div class="volcano-middle">
+                <div class="volcano-content">
+                    <h2 class="volcano-heading">
+                        A <span>Taste</span> Above the Rest
+                    </h2>
+                    <p class="goodness"> oven-fired goodness</p>
+                    <p class="volcano-para">Everyone will be amazed by the molten cheese volcano that they can dip their slice into on this tasty pizza.</p>
+                </div>
+                <img src="./img/volcanopizza3.webp" alt="">
+            </div>
+            <div class="volcano-bottom">
+                <a href="#" class="volcano-read">Recipe</a>
+                <a href="#" class="volcano-view">View All...</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="dessert">
+        <div class="dessert-container">
+            <div class="dessert-content">
+                <h1 class="dessert-heading">Desserts</h1>
+                <p class="dessert-para">Life is too short make it sweet.</p>
+                <p class="embark">Embark on a dessert <span>Adventure</span></p>
+            </div>
+
+            <div class="dessert-items">
+                <div class="dessert-item">
+                    <img src="./img/pavlova1.jpg" alt="Image" class="dessert-img">
+                    <p class="dessert-name">Clssic Pavlova</p>
+                    <i class="ri-user-smile-line"></i>
+                    <div class="dessert-btns">
+                        <a href="#" class="special-btn nw">Recipe</a>
+                        <a href="#" class="video-btn nw">Video</a>
+                    </div>
+                </div>
+                <div class="dessert-item">
+                    <img src="./img/bananapudding3.jpg" alt="Image" class="dessert-img">
+                    <p class="dessert-name">
+                        Banana Pudding
+                    </p>
+                    <i class="ri-user-smile-line"></i>
+                    <div class="dessert-btns">
+                        <a href="#" class="special-btn nw">Recipe</a>
+                        <a href="#" class="video-btn nw">Video</a>
+                    </div>
+                </div>
+                <div class="dessert-item">
+                    <img src="./img/fruitcusturd3.jpg" alt="Image" class="dessert-img">
+                    <p class="dessert-name">Fruit Custurd</p>
+                    <i class="ri-user-smile-line"></i>
+                    <div class="dessert-btns">
+                        <a href="#" class="special-btn nw">Recipe</a>
+                        <a href="#" class="video-btn nw">Video</a>
+                    </div>
+                </div>
+                <div class="dessert-item">
+                    <img src="./img/butterscotchpudding.jpg" alt="Image" class="dessert-img">
+                    <p class="dessert-name">Butterscotch Pudding</p>
+                    <i class="ri-user-smile-line"></i>
+                    <div class="dessert-btns">
+                        <a href="#" class="special-btn nw">Recipe</a>
+                        <a href="#" class="video-btn nw">Video</a>
+                    </div>
+                </div>
+                <div class="dessert-item">
+                    <img src="./img/malairoll2.jpg" alt="Image" class="dessert-img">
+                    <p class="dessert-name">Malai Roll</p>
+                    <i class="ri-user-smile-line"></i>
+                    <div class="dessert-btns">
+                        <a href="#" class="special-btn nw">Recipe</a>
+                        <a href="#" class="video-btn nw">Video</a>
+                    </div>
+                </div>
+                <div class="dessert-item">
+                    <img src="./img/nutella truffles2.jpg" alt="Image" class="dessert-img">
+                    <p class="dessert-name">Nutella Truffles</p>
+                    <i class="ri-user-smile-line"></i>
+                    <div class="dessert-btns">
+                        <a href="#" class="special-btn nw">Recipe</a>
+                        <a href="#" class="video-btn nw">Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="dessert-view nw">View All...</a>
+        </div>
+    </div>
+
+    <div class="start">
+        <div class="start-container">
+            <div class="start-content">
+                <div class="start-left">
+                    <img src="./img/juicychickedrumstick.jpg" alt="Image" id="start-img">
+                </div>
+                <div class="start-right">
+                    <h class="start-heading">Juicy Chicken Drumstick Fry</h>
+                    <p class="start-taste">Taste that make you happy, Just Eat and forget Everything.</p>
+                    <P class="ocassion">Starter for any Ocassion</P>
+                    <div class="start-btns">
+                        <a href="#" class="special-btn nw">Recipe</a>
+                        <a href="#" class="dessert-view nw start-view">View All...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="start-bottom">
+                <h3 class="start-nutrition">Nutrition</h3>
+                <p class="start-para">
+                    Serving: 1drumstick | Calories: 184kcal | Carbohydrates: 1g | Protein: 18g | Fat: 12g | Saturated Fat: 3g | Cholesterol: 93mg | Sodium: 300mg | Potassium: 226mg | Fiber: 1g | Sugar: 1g | Vitamin A: 129IU | Calcium: 10mg | Iron: 1mg
+                </p>
+                <h3 class="start-note">Notes</h3>
+                <p class="start-para">
+                    For larger drumsticks, more cook time might be needed. <br/>
+                    For extra large drumsticks I recommend finishing your chicken in the oven at 400°F for 10-15 minutes and then removing them and tenting them with foil and letting them rest for an additional 10 minutes. <br/>
+                    If the skin is browning too quickly on your drumsticks then lower the heat a bit.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category-container">
+            <div class="category-content">
+                <h2 class="category-heading">Food Categories</h2>
+                <p class="category-para">Transforming Food Experiences</p>
+            </div>
+            <div class="category-items">
+                <div class="category-item">
+                    <img src="./img/break3.jpg" alt="Image" class="category-img">
+                    <p class="category-name">Break Fast</p>
+                    <a href="#" class="category-btn nw">View All</a>
+                </div>
+                <div class="category-item">
+                    <img src="./img/lunch2.jpg" alt="Image" class="category-img">
+                    <p class="category-name">Lunch</p>
+                    <a href="#" class="category-btn nw">View All</a>
+                </div>
+                <div class="category-item">
+                    <img src="./img/dinner1.jpg" alt="Image" class="category-img">
+                    <p class="category-name">Dinner</p>
+                    <a href="#" class="category-btn nw">View All</a>
+                </div>
+                <div class="category-item">
+                    <img src="./img/apperizers1.jpg" alt="Image" class="category-img">
+                    <p class="category-name">Appetizers</p>
+                    <a href="#" class="category-btn nw">View All</a>
+                </div>
+                <div class="category-item">
+                    <img src="./img/fastfood4.jpg" alt="Image" class="category-img">
+                    <p class="category-name">Fast Food</p>
+                    <a href="#" class="category-btn nw">View All</a>
+                </div>
+                <div class="category-item">
+                    <img src="./img/sweets3.webp" alt="Image" class="category-img">
+                    <p class="category-name">Sweets</p>
+                    <a href="#" class="category-btn nw">View All</a>
+                </div>
+                <div class="category-item">
+                    <img src="./img/beverage3.jpg" alt="Image" class="category-img">
+                    <p class="category-name">Beverage</p>
+                    <a href="#" class="category-btn nw">View All</a>
+                </div>
+                <div class="category-item">
+                    <img src="./img/nonveg3.jpg" alt="Image" class="category-img">
+                    <p class="category-name">Non-veg</p>
+                    <a href="#" class="category-btn nw">View All</a>
+                </div>
+                <div class="category-item">
+                    <img src="./img/state2.jpg" alt="Image" class="category-img">
+                    <p class="category-name">States Favourite</p>
+                    <a href="#" class="category-btn nw">View All</a>
+                </div>
+            </div>
+            <div class="category-bottom">
+                <p class="category-btm">
+                    View All Food Categories
+                </p>
+                <a href="#" class="categories-btn">
+                    <i class="ri-arrow-right-fill"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <h2 class="footer-heading" id="newrec">New Recipes</h2>
+                <div class="footer-items">
+                    <div class="footer-item">
+                        <img src="./img/mutton chilli fry5.jpg" alt="Image" class="footer-img">
+                        <h2 class="footer-item-name">Mutton Chilli Fry</h2>
+                        <div class="footer-btn">
+                            <a href="#" class="special-btn nw">Recipe</a>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <img src="./img/allo tikki chat3.webp" alt="Image" class="footer-img">
+                        <h2 class="footer-item-name">Aloo Tikki Chat</h2>
+                        <div class="footer-btn">
+                            <a href="#" class="special-btn nw">Recipe</a>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <img src="./img/egg bake4.jpg" alt="Image" class="footer-img">
+                        <h2 class="footer-item-name">Spicy Egg Bake</h2>
+                        <div class="footer-btn">
+                            <a href="#" class="special-btn nw">Recipe</a>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <img src="./img/huli huli3.webp" alt="Image" class="footer-img">
+                        <h2 class="footer-item-name">Huli Huli Chicken</h2>
+                        <div class="footer-btn">
+                            <a href="#" class="special-btn nw">Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <div class="fcompany-name">
+                        <p>Garam Masala</p>
+                    </div>
+                    <p class="footer-para">
+                        A recipe is a formula of ingredients and a list of instructions for creating prepared foods.
+                    </p>
+                </div>
+                <div class="footer-middle">
+                        <p class="quick">Quick Links</p>
+                        <div class="flinks-btns">
+                                <a href="index.html" class="links-home flink nw">
+                                    <i class="ri-arrow-right-s-fill"></i>
+                                    <p>Home</p>
+                                </a>
+                                <a href="#" class="links-blogs flink nw">
+                                    <i class="ri-arrow-right-s-fill"></i>
+                                    <p>Blogs</p>
+                                </a>
+                        </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-email">
+                        <p class="footer-connect">Connect with US</p>
+                        <p class="footer-mail">XYZ@gmail.com</p>
+                    </div>
+                    <div class="footer-icons">
+                        <p class="follow">Follow Us on</p>
+                        <div class="ficons">
+                            <a href="#" class="utube">
+                                <img src="./img/utube.png" alt="icon">
+                            </a>
+                            <a href="#" class="utube">
+                                <img src="./img/insta4.png" alt="icon">
+                            </a>
+                            <a href="#" class="utube">
+                                <img src="./img/fb2.png" alt="icon">
+                            </a>
+                            <a href="#" class="utube">
+                                <img src="./img/snap.png" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <!-- <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('#menulist,#apear')
+            menulist.style.display = 'flex'
+            apear.style.display = 'block'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('#menulist, #apear')
+            menulist.style.display = 'none'
+            apear.style.display = 'none'
+        }
+    </script> -->
+    <script src="index.js"></script>
+</body>
+
+</html>
