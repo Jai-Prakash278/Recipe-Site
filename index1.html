@@ -1,1 +1,50 @@
-hey jai-prakash
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garam Masala</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="dummy.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="top-nav">
+                <h1 class="site-name">Garam Masala</h1>
+                <p class="for-you">For You</p>
+                <div class="search">
+                    <p>Search your Recipe</p>
+                    <div class="search-container">
+                        <input type="text" class="search-box" placeholder="Search...">
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+                <button class="hamburger" onclick="toggleMenu()">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
+            
+            <div class="nav-items" id="menuList">
+                <button class="close-btn" onclick="toggleMenu()">
+                    <i class="ri-close-line"></i>
+                </button>
+                <a href="#" class="nav-item">Home</a>
+                <a href="#" class="nav-item">About</a>
+                <div class="nav-item dropdown">
+                    <select name="choice" id="choice" class="choice">
+                        <option value="choose">Pasand</option>
+                        <option value="Bihari">Bihari Food</option>
+                        <option value="bengali">Bengali Food</option>
+                        <option value="odisa">Odia Food</option>
+                    </select>
+                </div>
+                <a href="#" class="nav-item">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <script src="dummy.js"></script>
+</body>
+</html>
+

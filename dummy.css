@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-13%20152512-AlrxBtPArhSJDQ2NdmG3JQ3P7HD3ah.png');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.site-name {
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.for-you {
+    color: #ff69b4;
+    font-size: 1.2rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-box {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-btn {
+    padding: 0.5rem 1rem;
+    background: #6495ED;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background: #4169E1;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.nav-item {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.choice {
+    background: transparent;
+    color: #00ffff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.choice option {
+    background: #333;
+    color: white;
+}
+
+.close-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-items {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        padding: 2rem;
+        z-index: 1000;
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    .close-btn {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .search {
+        order: 3;
+        width: 100%;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-box {
+        flex: 1;
+    }
+}
+

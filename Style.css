@@ -17,6 +17,10 @@
     --blue-btn: rgb(2, 2, 211);
 }
 
+.main-container{
+    background-image: linear-gradient(to top, #e4eef2 0%, #edf3f6 100%);
+}
+
 /* Navbar Styling */
 .nav-container {
     width: 100%;
@@ -37,6 +41,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
+}
+
+.site-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(255, 238, 0);
+    text-shadow: 1px 1px 3px black;
+}
+
+.middleyou {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: rgb(255, 8, 206);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+    padding: 0 .5rem;
+    font-family: "Pacifico", cursive;
 }
 
 .search p {
@@ -44,19 +65,20 @@
     font-weight: 450;
     text-align: center;
     margin-bottom: .25rem;
-    /* color: var(--text-color); */
     color: rgb(255, 168, 54);
 }
 
-.search input:focus {
+/* .search input:focus {
     background-color: rgb(241, 179, 34);
     color: darkred;
-}
+} */
 
 .search-box {
     height: 26px;
     width: 170px;
     margin-right: .2rem;
+    font-size: 1.11rem;
+    padding: .2rem .4rem;
 }
 
 .search-btn {
@@ -79,29 +101,12 @@
     color: darkred;
 }
 
-.site-name {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: rgb(255, 238, 0);
-    text-shadow: 1px 1px 3px black;
-}
-
-.middleyou {
-    font-size: 2.1rem;
-    font-weight: 900;
-    color: rgb(255, 8, 206);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
-    padding: 0 .5rem;
-    font-family: "Pacifico", cursive;
-}
-
 .nav-items {
     display: flex;
     padding: 1rem;
     justify-content: center;
     align-items: center;
     gap: 2.3rem;
-    /* visibility: hidden; */
 }
 
 .nav-item {
@@ -113,7 +118,6 @@
 
 .nav-item:hover {
     transform: translateY(-5px);
-    /* background-color: rgb(225, 110, 32); */
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
@@ -149,7 +153,6 @@
 }
 
 .nav-content {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -168,7 +171,6 @@
 .nav-heading {
     font-size: 2.5rem;
     font-weight: 500;
-    /* color: rgb(217, 255, 0); */
     color: var(--text-color);
     animation: comeleft 2.6s linear 0s forwards;
     opacity: 0;
@@ -212,7 +214,6 @@
 }
 
 .nav-btns {
-    /* padding: 1rem; */
     margin-top: 1rem;
     display: flex;
     gap: 2rem;
@@ -262,6 +263,15 @@
     text-shadow: 2px 2px 2px rgb(255, 20, 20);
 }
 
+
+
+/* .hamburger{
+    height: 30px;
+    width: 30px;
+    font-size: 2.2rem;
+    display: none;
+} */
+
 .hamburger {
     margin-right: .7rem;
     display: none;
@@ -270,7 +280,6 @@
 .hamburger i {
     color: var(--text-color);
     font-size: 2.3rem;
-    /* display: none; */
 }
 
 /* Media Query for Navbar */
@@ -293,12 +302,14 @@
 
 @media(max-width:685px) {
     .nav-items {
+        width: 210px;
         position: absolute;
         flex-direction: column;
         gap: 1.7rem;
         right: 0;
-        top: 1rem;
-        background-color: rgb(207, 128, 0, 1);
+        top: .8rem;
+        /* background-color: rgb(207, 128, 0, 1); */
+        background-color: rgba(0, 0, 0, 0.863);
         border-top-left-radius: 1rem;
         /* border-bottom-left-radius: 1rem; */
         box-shadow: 3px 2px 23px rgb(0, 0, 0, 0.1);
@@ -317,8 +328,9 @@
     .search {
         position: absolute;
         right: 0;
-        top: 325px;
+        top: 270px;
         background-color: rgba(0, 0, 0, 0.7);
+        /* background-color: rgb(207, 128, 0, 1); */
         border-bottom-left-radius: .5rem;
         padding: 0 .5rem .5rem .49rem;
         display: none;
