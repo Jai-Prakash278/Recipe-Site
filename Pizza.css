@@ -911,7 +911,7 @@
   align-items: center;
   justify-content: center;
   /* gap: 1rem; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./img1/volcanobg2.avif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./img/volcanobg2.avif);
   object-fit: cover;
   background-size: cover;
   background-position: center;
